@@ -18,3 +18,21 @@ We have build an application that can attack websites that are not protected fro
 * `-x` => Specify proxy file 
 
 ![Screenshot from 2023-01-07 17-18-54](https://user-images.githubusercontent.com/77694113/211160486-af7bfb5f-b58f-4730-9e43-035c842d2c29.png)
+ 
+ 
+ 
+ 
+ # Building 
+ 
+ * You can use `git` to build this project. The following should work:
+ 
+ ```
+ # Clone repository via Git.
+ git clone https://github.com/aridonkrasniqii/ddos-attack.git
+ 
+ # Change directory to repository.
+ cd ddos-attack 
+ 
+ # Run the script. 
+ python ddos-attakc/main.py 
+ ```
