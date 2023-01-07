@@ -17,9 +17,12 @@ We have build an application that can attack websites that are not protected fro
 * `-t`  => Number of threads
 * `-x` => Specify proxy file 
 
-![Screenshot from 2023-01-07 17-18-54](https://user-images.githubusercontent.com/77694113/211160486-af7bfb5f-b58f-4730-9e43-035c842d2c29.png)
+![image](https://user-images.githubusercontent.com/77694113/211160738-b6f97d66-b0df-48cc-9745-1970c57d95d6.png)
  
+ # Example 
  
+ ![image](https://user-images.githubusercontent.com/77694113/211160925-1ea401cb-f00a-4985-b210-d59a8c73190a.png)
+
  
  
  # Building 
