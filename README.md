@@ -42,3 +42,10 @@ We have build an application that can attack websites that are not protected fro
  # Run the script. 
  python ddos-attakc/main.py 
  ```
+ 
+## Authors
+[Bleranda Azemi](https://github.com/Blesaza)
+[Besarta Kurtaj](https://github.com/besartakurtaj)
+[Aridon Krasniqi](https://github.com/aridonkrasniqii)
+
+
