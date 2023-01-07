@@ -26,7 +26,7 @@ We have build an application that can attack websites that are not protected fro
  
  * You can use `git` to build this project. The following should work:
  
- ```
+ ```bash
  # Clone repository via Git.
  git clone https://github.com/aridonkrasniqii/ddos-attack.git
  
