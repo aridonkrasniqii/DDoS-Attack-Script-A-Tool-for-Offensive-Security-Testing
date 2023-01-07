@@ -17,4 +17,5 @@ We have build an application that can attack websites that are not protected fro
 * `-t`  => Number of threads
 * `-x` => Specify proxy file 
 </br >
-![image](https://user-images.githubusercontent.com/77694113/211160351-9d21c6d4-207f-4802-8b1a-34a68b8589a5.png)
+
+![alt text] ![Screenshot from 2023-01-07 17-18-54](https://user-images.githubusercontent.com/77694113/211160486-af7bfb5f-b58f-4730-9e43-035c842d2c29.png)
