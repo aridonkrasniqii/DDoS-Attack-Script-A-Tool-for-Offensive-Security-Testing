@@ -9,10 +9,12 @@ We have build an application that can attack websites that are not protected fro
 
 # Command Line Usage 
 
-* `help` => Show possible commands
-* `host` => Specifies the host that you want to attack
-* `d` => Website path
-* `ssl` => HTTP/HTTPS
-* `port` => Port e.g. 80/443 
-* `t`  => Number of threads
-* `x` => Specify proxy file
+* `--help` => Show possible commands
+* `--host` => Specifies the host that you want to attack
+* `-d` => Website path
+* `--ssl` => HTTP/HTTPS
+* `--port` => Port e.g. 80/443 
+* `-t`  => Number of threads
+* `-x` => Specify proxy file 
+</br >
+![image](https://user-images.githubusercontent.com/77694113/211160351-9d21c6d4-207f-4802-8b1a-34a68b8589a5.png)
