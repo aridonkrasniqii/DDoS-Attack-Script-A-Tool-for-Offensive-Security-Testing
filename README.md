@@ -21,7 +21,7 @@ We have build an application that can attack websites that are not protected fro
  
  # Example 
  
- ![image](https://user-images.githubusercontent.com/77694113/211160925-1ea401cb-f00a-4985-b210-d59a8c73190a.png)
+![image](https://user-images.githubusercontent.com/77694113/211161001-11a47ae4-ae9d-4867-a89f-35a5385fb0bd.png)
 
  
  
