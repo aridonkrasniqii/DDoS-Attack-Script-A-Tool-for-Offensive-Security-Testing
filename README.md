@@ -9,10 +9,10 @@ We have build an application that can attack websites that are not protected fro
 
 # Command Line Usage 
 </br >
-* <mark> help </mark> - Show possible commands 
-* host - Specifies the host that you want to attack
-* <mark> d </mark> - Website path
-* <mark> ssl </mark> - HTTP/HTTPS
-* <mark> port </mark - Port e.g. 80/443
-* <mark> t </mark> - Number of threads
-* <mark> x </mark> - Specify proxy file
+* **help** - Show possible commands </br>
+* **host** - Specifies the host that you want to attack </br>
+* **d** - Website path </br>
+* **ssl** - HTTP/HTTPS </br>
+* **port** - Port e.g. 80/443 </br>
+* **t**  - Number of threads </br>
+* **x** - Specify proxy file </br>
