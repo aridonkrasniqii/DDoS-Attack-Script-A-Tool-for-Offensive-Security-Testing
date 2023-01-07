@@ -40,7 +40,7 @@ We have build an application that can attack websites that are not protected fro
  cd ddos-attack 
  
  # Run the script. 
- python ddos-attakc/main.py 
+ python ddos-attack/main.py 
  ```
  
 ## Authors
