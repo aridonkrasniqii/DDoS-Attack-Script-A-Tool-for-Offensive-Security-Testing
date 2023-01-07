@@ -16,14 +16,12 @@ We have build an application that can attack websites that are not protected fro
 * `--port` => Port e.g. 80/443 
 * `-t`  => Number of threads
 * `-x` => Specify proxy file 
+![Screenshot from 2023-01-07 17-27-50](https://user-images.githubusercontent.com/77694113/211161139-be6f81b4-5834-4e41-8340-af8853a731f6.png)
 
-![image](https://user-images.githubusercontent.com/77694113/211160738-b6f97d66-b0df-48cc-9745-1970c57d95d6.png)
- 
  # Example 
  
-![image](https://user-images.githubusercontent.com/77694113/211161001-11a47ae4-ae9d-4867-a89f-35a5385fb0bd.png)
+![Screenshot from 2023-01-07 17-33-48](https://user-images.githubusercontent.com/77694113/211161145-cb25aa48-14ae-4be6-97ac-38c6666ab809.png)
 
- 
  
  # Building 
  
