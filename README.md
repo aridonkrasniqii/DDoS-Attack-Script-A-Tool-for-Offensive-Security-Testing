@@ -16,9 +16,14 @@ We have build an application that can attack websites that are not protected fro
 * `--port` => Port e.g. 80/443 
 * `-t`  => Number of threads
 * `-x` => Specify proxy file 
+
 ![Screenshot from 2023-01-07 17-27-50](https://user-images.githubusercontent.com/77694113/211161139-be6f81b4-5834-4e41-8340-af8853a731f6.png)
 
  # Example 
+ ```bash 
+ # Run the script 
+ python ddos-attack/main.py --host merrfryme.com
+ ```
  
 ![Screenshot from 2023-01-07 17-33-48](https://user-images.githubusercontent.com/77694113/211161145-cb25aa48-14ae-4be6-97ac-38c6666ab809.png)
 
