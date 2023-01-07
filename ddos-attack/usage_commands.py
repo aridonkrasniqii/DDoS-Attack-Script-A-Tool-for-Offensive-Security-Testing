@@ -2,8 +2,6 @@ import argparse
 
 
 # Specified commands
-
-
 def usage():
     parser = argparse.ArgumentParser()
     parser.add_argument('--host', nargs="?", help="Web serveri, p.sh: coinmarketcap.com", required=True)
@@ -13,3 +11,4 @@ def usage():
     parser.add_argument('-t', '--threads', default=100, help="Numri i fijeve/threads (Default 100)", type=int)
     parser.add_argument('-x', '--proxy_file', help="Tekst fajlli per proxy (Opcionale)")
     return parser.parse_args()
+

@@ -1,7 +1,6 @@
 import urllib.request
 
 # Function that tells if website is protected by cloudflare
-
 def cloudflare(url):
     cf_message = False
     req = urllib.request.Request(url, headers={
