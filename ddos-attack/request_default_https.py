@@ -1,6 +1,6 @@
 import threading, socket, ssl
 
-
+# class for https request 
 class RequestDefaultHTTPS(threading.Thread):
     def __init__(self, request, args, counter, go, frame_info):
         threading.Thread.__init__(self)
